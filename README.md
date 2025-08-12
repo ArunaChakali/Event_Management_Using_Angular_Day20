@@ -104,7 +104,7 @@ events = [
 ## 🖼️ Screenshot
 
 **Event List with Price Formatting & Highlighting**
-*![Output Image](image.png)*
+*![Output Image]*D:\Angular Projects\Day21_20\Wipro-Nga-Angular-main\Event_Management_App\src\app\Screenshot (158).png
 
 ---
 
@@ -117,6 +117,8 @@ events = [
 * Renderer2 & HostListener for DOM manipulation
 
 ---
+
+[GitHub]:https://github.com/ArunaChakali/EduLearn_Courses_Day19
  
 
 
