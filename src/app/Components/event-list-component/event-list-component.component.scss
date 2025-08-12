@@ -1,0 +1,42 @@
+table {
+  width: 100%;
+  border-collapse: collapse;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  box-shadow: 0 3px 12px rgba(0, 0, 0, 0.08);
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+th, td {
+  padding: 14px 12px;
+  border: 1px solid #e5e5e5;
+  text-align: left;
+  font-size: 15px;
+}
+
+th {
+  background-color: #ffb347; /* soft pastel orange */
+  color: #fff;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+}
+
+tbody tr:nth-child(even) {
+  background-color: #fffaf5; /* very light orange-tint background */
+}
+
+tbody tr:nth-child(odd) {
+  background-color: #ffffff; /* clean white for contrast */
+}
+
+tbody tr:hover {
+  background-color: #ffe4b5; /* light warm hover */
+  transition: background-color 0.3s ease;
+  cursor: pointer;
+}
+
+/* Optional: make table header stand out with subtle shadow */
+thead {
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+}

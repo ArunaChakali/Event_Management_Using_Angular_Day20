@@ -1,0 +1,84 @@
+<!-- Displaying the list of events into tabular format -->
+<table>
+  <thead>
+    <tr>
+      <th>Event Name</th>
+      <th>Date</th>
+      <th>Ticket Price</th>
+      <th>Category</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let event of events" [appHighlightDirective]="event.price">
+      <td>{{ event.name }}</td>
+      <td>{{ event.date }}</td>
+      <td>{{ event.price | priceFormatPipe }}</td>
+      <td>{{ event.category }}</td>
+    </tr>
+  </tbody>
+</table>
+
+<style>
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #fefefe;
+    border-radius: 14px;
+    overflow: hidden;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.08);
+    animation: tableFade 0.9s ease-in-out;
+  }
+
+  thead {
+    background: linear-gradient(135deg, #ffd6a5, #fdffb6);
+    color: #4a4a4a;
+    text-transform: uppercase;
+    letter-spacing: 1.2px;
+  }
+
+  th, td {
+    padding: 14px 18px;
+    text-align: left;
+  }
+
+  th {
+    font-size: 15px;
+    font-weight: 700;
+  }
+
+  td {
+    font-size: 14px;
+    color: #555;
+    border-bottom: 1px solid #f0f0f0;
+  }
+
+  tbody tr:nth-child(even) {
+    background-color: #fffdf5;
+  }
+
+  tbody tr:hover {
+    background-color: #fff7d1;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    transform: scale(1.005);
+    box-shadow: inset 0 0 10px rgba(255, 214, 165, 0.25);
+  }
+
+  /* Header hover glow */
+  thead tr:hover {
+    box-shadow: 0 0 14px rgba(255, 214, 165, 0.5);
+  }
+
+  /* Animation for table load */
+  @keyframes tableFade {
+    from {
+      opacity: 0;
+      transform: translateY(15px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+</style>
