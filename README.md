@@ -104,8 +104,7 @@ events = [
 ## 🖼️ Screenshot
 
 **Event List with Price Formatting & Highlighting**
-*![Output Image]*D:\Angular Projects\Day21_20\Wipro-Nga-Angular-main\Event_Management_App\src\app\Screenshot (158).png
-
+*![Output Image]:(src/app/Pipes/Images/EventOutput.png)
 ---
 
 ## 📚 Technologies Used
@@ -118,7 +117,7 @@ events = [
 
 ---
 
-[GitHub]:https://github.com/ArunaChakali/EduLearn_Courses_Day19
- 
+
+[GitHub]:https://github.com/ArunaChakali/Event_Management_using_Angular_Day20
 
 
